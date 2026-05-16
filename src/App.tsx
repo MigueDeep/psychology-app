@@ -6,12 +6,14 @@ import { EvaluationPage } from './pages/EvaluationPage'
 import { HomePage } from './pages/HomePage'
 import { ParentsTeachersPage } from './pages/ParentsTeachersPage'
 import { SelfAssessmentPage } from './pages/SelfAssessmentPage'
+import { RegionPage } from './pages/RegionPage'
 
 function App() {
   return (
     <MainLayout>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/region/:name" element={<RegionPage />} />
         <Route path="/actividades" element={<ActivitiesPage />} />
         <Route path="/evaluacion" element={<EvaluationPage />} />
         <Route path="/padres-maestros" element={<ParentsTeachersPage />} />
