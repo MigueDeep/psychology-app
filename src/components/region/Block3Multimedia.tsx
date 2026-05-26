@@ -6,11 +6,7 @@ interface Block3MultimediaProps {
     gallery360: string[]
     landscapes: string[]
     crafts: string[]
-    miniVideos: {
-      dances: string[]
-      festivals: string[]
-      music: string[]
-    }
+    miniVideos: string[]
   }
 }
 
@@ -22,18 +18,6 @@ export const Block3Multimedia: React.FC<Block3MultimediaProps> = ({ data }) => {
       </div>
 
       <div className="space-y-8">
-        {/* Gallery 360
-        <div>
-          <h3 className="font-semibold text-lg text-[#307ffe] border-b pb-2 mb-4">Fotos 360°</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {data.gallery360.map((src, i) => (
-              <div key={i} className="h-40 rounded-lg flex items-center justify-center border border-dashed border-gray-400 overflow-hidden">
-                 <ZoomableImage src={src} className="w-full h-full" placeholderText={`[Foto 360 ${i+1}]`} />
-              </div>
-            ))}
-            {data.gallery360.length === 0 && <p className="text-gray-500 text-sm">No hay fotos 360 disponibles.</p>}
-          </div>
-        </div> */}
 
         {/* Galería general */}
         <div>
@@ -56,19 +40,16 @@ export const Block3Multimedia: React.FC<Block3MultimediaProps> = ({ data }) => {
         <div>
           <h3 className="font-semibold text-lg text-[#307ffe] border-b pb-2 mb-4">Mini Videos (Danzas, Fiestas, Música)</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {data.miniVideos.dances.map((_, i) => (
-              <div key={`dance-${i}`} className="h-32 bg-gray-800 rounded flex items-center justify-center text-white text-sm">
-                [Video Danza {i+1}]
-              </div>
-            ))}
-            {data.miniVideos.festivals.map((_, i) => (
-              <div key={`fest-${i}`} className="h-32 bg-gray-800 rounded flex items-center justify-center text-white text-sm">
-                [Video Fiesta {i+1}]
-              </div>
-            ))}
-            {data.miniVideos.music.map((_, i) => (
-              <div key={`music-${i}`} className="h-32 bg-gray-800 rounded flex items-center justify-center text-white text-sm">
-                [Video Música {i+1}]
+            {data.miniVideos.map((src, i) => (
+              <div key={`video-${i}`} className="aspect-video rounded overflow-hidden">
+                <iframe
+                  src={src}
+                  title={`Mini Video ${i+1}`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               </div>
             ))}
           </div>
