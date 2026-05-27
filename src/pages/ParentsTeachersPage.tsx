@@ -1,25 +1,19 @@
 import { PageHeader } from '../components/ui/PageHeader'
-import { guidanceCards } from '../data/parentsTeachers'
+import { MemoPlay } from '../components/MemoPlay'
 
 export function ParentsTeachersPage() {
   return (
     <div>
       <PageHeader
-        title="Recursos para el aprendizaje"
-        description="Actividades y materiales para apoyar el aprendizaje."
+        title="Memorama"
+        description="Encuentra los pares de imágenes para ejercitar tu memoria."
       />
-      <section className="grid gap-4 md:grid-cols-2">
-        {guidanceCards.map((card) => (
-          <article key={card.title} className="rounded-2xl border border-blue-100 bg-white p-5 shadow-sm">
-            <h2 className="font-heading text-2xl text-primary">{card.title}</h2>
-            <ul className="mt-3 list-inside list-disc space-y-2 text-slate-700">
-              {card.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
-      </section>
+      <MemoPlay />
+      <PageHeader
+        title="Une los paisajes"
+        description="Relaciona cada paisaje con su nombre para mejorar tu memoria visual."
+      />
+      <MemoPlay />
     </div>
   )
 }
