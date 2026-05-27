@@ -5,8 +5,8 @@ export function ParentsTeachersPage() {
   return (
     <div>
       <PageHeader
-        title="Padres y Maestros"
-        description="Recomendaciones practicas para fortalecer el acompanamiento coordinado entre hogar y escuela."
+        title="Recursos para el aprendizaje"
+        description="Actividades y materiales para apoyar el aprendizaje."
       />
       <section className="grid gap-4 md:grid-cols-2">
         {guidanceCards.map((card) => (

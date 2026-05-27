@@ -1,10 +1,10 @@
 import type { FeatureCard, HeroContent } from '../types/content'
 
 export const homeHero: HeroContent = {
-  eyebrow: 'Plataforma educativa de psicologia',
-  title: 'Aprendizaje aplicado para estudiantes de psicologia',
+  eyebrow: 'Plataforma educativa de México',
+  title: 'CONOCE MEXICO Y SU RIQUEZA CULTURAL.',
   description:
-    'Explora actividades guiadas, recursos de evaluacion y materiales de acompanamiento para fortalecer competencias academicas y practicas.',
+    'Promover el reconocimiento, la valoración y el respeto hacia la diversidad cultural que existe en México, mediante una experiencia interactiva, dinámica y accesible que permita a los usuarios explorar las distintas regiones del país. A través de recursos audiovisuales, actividades lúdicas, lecturas breves e interacciones digitales, la plataforma busca acercar a las personas a las tradiciones, costumbres, lenguas, gastronomía, expresiones artísticas y formas de vida que caracterizan al norte, centro y sur de México, fomentando el aprendizaje significativo y el interés por la identidad cultural nacional. Asimismo, la plataforma pretende fortalecer la comprensión de México como un país multicultural y diverso, en el que las diferencias culturales representan una riqueza social e histórica que contribuye a la construcción de la identidad y el patrimonio del país',
 }
 
 export const homeFeatures: FeatureCard[] = [
