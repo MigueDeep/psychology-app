@@ -130,7 +130,7 @@ export const regionsData = {
   centro: {
     block1: {
       videoSrc: "https://www.youtube.com/embed/q_i53TrPyb4?si=2ebU_cwxyfBM3-Qj",
-      audioSrc: null,
+      audioSrc: "",
       audioTitle: "",
       quotes: ["El ombligo de la luna", "La cuna del mariachi y el tequila", "Donde los hombres se convierten en dioses"],
       landscapes: [centerImage1, centerImage2, centerImage3]
