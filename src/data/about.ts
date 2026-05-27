@@ -2,12 +2,23 @@ import type { AboutContent } from '../types/content'
 
 export const aboutContent: AboutContent = {
   mission:
-    'Facilitar recursos educativos accesibles para la formacion de estudiantes de psicologia y su articulacion con familia y escuela.',
+    'Brindar una plataforma educativa interactiva y accesible que permita a los usuarios conocer y aprender sobre la diversidad cultural de México mediante recursos digitales, actividades dinámicas y contenido informativo de las distintas regiones del país.',
   vision:
-    'Consolidar una comunidad de aprendizaje que promueva intervenciones tempranas, eticas y basadas en evidencia.',
+    'Ser una plataforma educativa reconocida por ofrecer experiencias digitales que promuevan el conocimiento, el interés y la valoración de la riqueza cultural de México de manera clara, dinámica y accesible para los usuarios.',
   principles: [
-    'Enfoque centrado en la persona',
-    'Trabajo colaborativo entre contextos',
-    'Mejora continua con seguimiento formativo',
+    'Valoración y respeto por la diversidad cultural ',
+    'Aprendizaje interactivo y accesible',
+    'Promoción de la identidad cultural mexicana',
+    'Participación dinámica y significativa',
+    'Uso de recursos educativos innovadores',
   ],
+  authors: [
+    "Licenciatura en psicología",
+    "Acosta Méndez Paola",
+    "Ortiz Castillo Jafet Adoniram",
+    "Rodríguez Sánchez Yanitixi",
+    "Rosas Olvera Jesús Arturo",
+    "Samano Valentin Gloria",
+    "Docente responsable de la actividad: Psic. Rosa Longardo Diaz",
+  ]
 }

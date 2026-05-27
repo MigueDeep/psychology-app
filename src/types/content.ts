@@ -43,4 +43,5 @@ export type AboutContent = {
   mission: string
   vision: string
   principles: string[]
+  authors: string[]
 }
